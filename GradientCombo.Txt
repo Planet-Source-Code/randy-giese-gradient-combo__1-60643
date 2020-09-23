@@ -1,0 +1,31 @@
+Purpose:
+Version 1.1.0 has an updated Speed Control.  The original version was incorrectly set in the center of the bar no matter what the speed was.  Version 1.1.0 fixes that bug. (May 27,2005)
+GradientCombo has 4 different Gradient displays:
+
+1 - Full Screen Gradient
+2 - Smaller rectangular Gradients
+3 - Gradient Circles
+4 - Gradient Triangles
+
+You may set each displays Speed and Run Time without affecting the other displays.  Click the Right Mouse button to open the Set-up Menu.  I have included a Set-up file called "Grad_Comb.Ini".  It is a Text file, so you may read or edit it with any word processor, such as WordPad or NotePad.  It just saves your settings so you don't have to re-enter them each time you run the program.
+You may also Click the Left Mouse button to Freeze or Thaw the display, depending on the current screen status.
+
+Inputs:
+None.
+
+Returns:
+Nice looking Gradient graphics.
+
+Side Effects:
+None.
+
+Assumptions:
+None.
+
+API's etc:
+BringWindowToTop        	'  This is used to keep the Speed Control on top
+Ellipse				'  This draws the Gradient Circles
+GradientFillTriangle		'  This draws the triangles
+QueryPerformanceCounter		'  This is used in the High Performance timing operations
+QueryPerformanceFrequency	'  This is used in the High Performance timing operations
+SetCursorPos			'  This just moves the cursor off the screen
